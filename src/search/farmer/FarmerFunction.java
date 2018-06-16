@@ -10,8 +10,6 @@ import aima.core.search.framework.Node;
 import aima.core.search.framework.problem.GeneralProblem;
 import aima.core.search.framework.problem.Problem;
 
-
-
 public class FarmerFunction {
 	
 	public static Problem<FarmerState, Action> createProblem() {
@@ -106,3 +104,4 @@ public class FarmerFunction {
         }
     }
 }
+

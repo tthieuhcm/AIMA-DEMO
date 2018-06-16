@@ -23,13 +23,13 @@ import aima.core.search.uninformed.UniformCostSearch;
 public class FarmerApp {
 	public static void main(String args[]) {
 			FarmerWithBreadthFirstSearch();
-			FarmerWithUniformCostSearch();
-			FarmerWithDepthLimitedSearch(8);
-			FarmerWithIterativeDeepeningSearch();
-			FarmerWithGreedyBestFirstSearchMisplacedTileHeuristic();
-			FarmerWithGreedyBestFirstSearchManhattanHeuristic();
-			FarmerWithAStarSearchMisplacedTileHeuristic();
-			FarmerWithAStarSearchManhattanHeuristic();
+			//FarmerWithUniformCostSearch();
+			//FarmerWithDepthLimitedSearch(8);
+			//FarmerWithIterativeDeepeningSearch();
+			//FarmerWithGreedyBestFirstSearchMisplacedTileHeuristic();
+			//FarmerWithGreedyBestFirstSearchManhattanHeuristic();
+			//FarmerWithAStarSearchMisplacedTileHeuristic();
+			//FarmerWithAStarSearchManhattanHeuristic();
 			//FarmerWithDepthFirstSearch();
 	}
 	private static void FarmerWithBreadthFirstSearch() {
