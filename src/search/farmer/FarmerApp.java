@@ -38,8 +38,8 @@ public class FarmerApp {
 			Problem<FarmerState, Action> problem = FarmerFunction.createProblem();
 			SearchForActions<FarmerState, Action> search = new BreadthFirstSearch<>(new GraphSearch<>());
 			SearchAgent<FarmerState, Action> agent = new SearchAgent<>(problem, search);
-			printActions(agent.getActions());
-			printInstrumentation(agent.getInstrumentation());
+			//printActions(agent.getActions());
+			//printInstrumentation(agent.getInstrumentation());
 		} catch (Exception e) {
 			e.printStackTrace();
 		} 
@@ -96,7 +96,7 @@ public class FarmerApp {
 		try {
 			System.out.println("\nFarmerAppDemo GreedyBestFirstSearch(MisplacedTileHeuristic) -->");
 			Problem<FarmerState, Action> problem = FarmerFunction.createProblem();
-			SearchForActions<FarmerState, Action> search = new GreedyBestFirstSearch<>(new GraphSearch<>(), 
+			SearchForActions<FarmerState, Action> search = new GreedyBestFirstSearch<>(new GraphSearch<>(),
 					FarmerFunction.createMisplacedTileHeuristicFunction());
 			SearchAgent<FarmerState, Action> agent = new SearchAgent<>(problem, search);
 			printActions(agent.getActions());
@@ -122,7 +122,7 @@ public class FarmerApp {
 		try {
 			System.out.println("\nFarmerAppDemo AStarSearch(MisplacedTileHeuristic) -->");
 			Problem<FarmerState, Action> problem = FarmerFunction.createProblem();
-			SearchForActions<FarmerState, Action> search = new AStarSearch<>(new GraphSearch<>(), 
+			SearchForActions<FarmerState, Action> search = new AStarSearch<>(new GraphSearch<>(),
 					FarmerFunction.createMisplacedTileHeuristicFunction());
 			SearchAgent<FarmerState, Action> agent = new SearchAgent<>(problem, search);
 			printActions(agent.getActions());
